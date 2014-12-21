@@ -5,6 +5,6 @@ compiler:
   - clang
 before_script:
   - sudo apt-get install libtinyxml-dev zlib1g-dev
-  - cmake .
+  - cmake . -DTINYXML2_INCLUDE_DIR=/usr/include/ -DTINYXML2_LIBRARIES=/usr/lib/
 script:
   - make -j4
